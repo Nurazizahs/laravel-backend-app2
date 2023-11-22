@@ -1,9 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-=======
 use App\Http\Controllers\UserController;
->>>>>>> 503631e (API CRUD)
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,11 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
-   // return view('welcome');
- return view('pages.blank-page', ['type_menu' => '']);
-});
-=======
     // return view('welcome');
     return view('auth.login', ['type_menu' => '']);
 });
@@ -59,4 +51,3 @@ Route::middleware(['auth', 'verified'])->group(function () {
 // Route::get('/verify', function () {
 //     return view('auth.verify');
 // });
->>>>>>> 503631e (API CRUD)

@@ -18,12 +18,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-<<<<<<< HEAD
-=======
 
         $this->call([
             UserSeeder::class,
         ]);
->>>>>>> 503631e (API CRUD)
     }
 }

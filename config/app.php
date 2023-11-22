@@ -160,11 +160,8 @@ return [
          * Package Service Providers...
          */
 
-<<<<<<< HEAD
-=======
         App\Providers\FortifyServiceProvider::class,
 
->>>>>>> 503631e (API CRUD)
         /*
          * Application Service Providers...
          */
