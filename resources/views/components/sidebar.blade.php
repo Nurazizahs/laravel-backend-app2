@@ -8,6 +8,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
+<<<<<<< HEAD
             <li class="nav-item dropdown {{ $type_menu === 'dashboard' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
@@ -390,5 +391,23 @@
                 <i class="fas fa-rocket"></i> Documentation
             </a>
         </div>
+=======
+            <li class="nav-item dropdown ">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <ul class="dropdown-menu">
+                    <li class=''>
+                        <a class="nav-link" href="{{ url('dashboard-general-dashboard') }}">General Dashboard</a>
+                    </li>
+                    <li class="">
+                        <a class="nav-link" href="{{ url('dashboard-ecommerce-dashboard') }}">Ecommerce Dashboard</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item ">
+                <a href="{{ route('user.index') }}" class="nav-link "><i class="fas fa-users"></i><span>User
+                        List</span></a>
+            </li>
+
+>>>>>>> 503631e (API CRUD)
     </aside>
 </div>
