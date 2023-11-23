@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentCallbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,3 +52,4 @@ Route::middleware(['auth', 'verified'])->group(function () {
 // Route::get('/verify', function () {
 //     return view('auth.verify');
 // });
+Route::post('payments/midtrans-notification', [PaymentCallbackController::class, 'receive']);
