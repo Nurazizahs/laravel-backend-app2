@@ -3,12 +3,6 @@
 namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
-<<<<<<< HEAD
-use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-
-class AuthServiceProvider extends ServiceProvider
-{
-=======
 
 use App\Models\User;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -22,7 +16,6 @@ class AuthServiceProvider extends ServiceProvider
         'payment-update' => ['superadmin'],
 
     ];
->>>>>>> 503631e (API CRUD)
     /**
      * The model to policy mappings for the application.
      *
@@ -37,9 +30,6 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-<<<<<<< HEAD
-        //
-=======
 
         foreach (self::$permission as $feature => $roles) {
             Gate::define($feature, function (User $user) use ($roles) {
@@ -48,6 +38,5 @@ class AuthServiceProvider extends ServiceProvider
                 }
             });
         }
->>>>>>> 503631e (API CRUD)
     }
 }
